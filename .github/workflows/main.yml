@@ -1,0 +1,19 @@
+name: Show Name
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  display_name:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Run a one-line script
+      run: |
+        echo "First Name: Vladislava"
+        echo "Last Name: Vivtash"
